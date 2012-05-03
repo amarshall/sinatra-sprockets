@@ -1,4 +1,4 @@
-# Sinatra::Sprockets
+# Sinatra Sprockets
 
 Sinatra extension for Sprockets integration.
 
@@ -43,5 +43,5 @@ You'll also get helper functions that will be familiar to those who use Rails:
 
 ## Credits & License
 
-Copyright ©2012 J. Andrew Marshall. All rights reserved.
+Copyright © 2012 J. Andrew Marshall. All rights reserved.
 License is available in the LICENSE file.
