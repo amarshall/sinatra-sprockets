@@ -27,11 +27,11 @@ module Sinatra::Sprockets
         if debug && asset = asset_paths.asset_for(source, 'js')
           asset.to_a.map do |dep|
             src = asset_path(dep, :ext => 'js', :body => true, :digest => digest)
-            "<script src=#{src} type='application/javascript'></script>"
+            "<script src=#{src} type='text/javascript'></script>"
           end
         else
           src = asset_path(source, :ext => 'js', :body => body, :digest => digest)
-          "<script src=#{src} type='application/javascript'></script>"
+          "<script src=#{src} type='text/javascript'></script>"
         end
       end.join("\n")
     end
