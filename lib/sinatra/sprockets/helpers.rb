@@ -46,11 +46,11 @@ module Sinatra::Sprockets
         if debug && asset = asset_paths.asset_for(source, 'css')
           asset.to_a.map do |dep|
             href = asset_path(dep, :ext => 'css', :body => true, :protocol => :request, :digest => digest)
-            "<link href='#{href}' media='screen' rel='stylesheet', type='text/css' />"
+            "<link href='#{href}' media='screen' rel='stylesheet' type='text/css' />"
           end
         else
           href = asset_path(source, :ext => 'css', :body => body, :protocol => :request, :digest => digest)
-          "<link href='#{href}' media='screen' rel='stylesheet', type='text/css' />"
+          "<link href='#{href}' media='screen' rel='stylesheet' type='text/css' />"
         end
       end.join("\n")
     end
