@@ -1,3 +1,4 @@
+require "sprockets"
 require "sinatra/sprockets/version"
 require "sinatra/sprockets/asset_paths"
 require "sinatra/sprockets/configuration"
