@@ -37,7 +37,6 @@ module Sinatra::Sprockets
     end
 
     def stylesheet_link_tag(*sources)
-      options = {}
       debug   = config.debug
       body    = false
       digest  = config.digest
