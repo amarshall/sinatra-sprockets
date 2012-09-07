@@ -1,9 +1,9 @@
 module Sinatra::Sprockets
   module Helpers
     def asset_path source, options = {}
-        source = source.logical_path if source.respond_to?(:logical_path)
-        path = asset_paths.compute_public_path(source, config.prefix, options.merge(:body => true))
-        options[:body] ? "#{path}?body=1" : path
+      source = source.logical_path if source.respond_to?(:logical_path)
+      path = asset_paths.compute_public_path(source, config.prefix, options.merge(:body => true))
+      options[:body] ? "#{path}?body=1" : path
     end
 
     def image_path source, options = {}
@@ -52,12 +52,6 @@ module Sinatra::Sprockets
           "<link href='#{href}' media='screen' rel='stylesheet' type='text/css' />"
         end
       end.join("\n")
-    end
-
-    def asset_path(source, options={})
-      source = source.logical_path if source.respond_to?(:logical_path)
-      path = asset_paths.compute_public_path(source, config.prefix, options.merge(:body => true))
-      options[:body] ? "#{path}?body=1" : path
     end
 
     private
