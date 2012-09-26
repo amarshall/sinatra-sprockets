@@ -49,3 +49,5 @@ You'll also get helper functions that will be familiar to those who use Rails:
 
 Copyright © 2012 J. Andrew Marshall. All rights reserved.
 License is available in the LICENSE file.
+
+Special thanks to [those who have contributed](https://github.com/amarshall/sinatra-sprockets/graphs/contributors)!
